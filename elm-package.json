@@ -1,5 +1,5 @@
 {
-    "version": "0.0.0",
+    "version": "0.0.1",
     "summary": "Utility functions for statistics",
     "repository": "http://localhost/git/elm-statistics.git",
     "license": "BSD3",
