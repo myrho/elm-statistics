@@ -1,4 +1,4 @@
-module Statistics (divWithDefault, (/.), median) where
+module Statistics exposing (divWithDefault, (/.), median) 
 
 divWithDefault : Float -> Float -> Float -> Float
 divWithDefault default dividend divisor =
