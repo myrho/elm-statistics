@@ -1,12 +1,13 @@
 {
-    "version": "1.0.1",
+    "version": "1.0.0",
     "summary": "Utility functions for statistics",
-    "repository": "http://localhost/git/elm-statistics.git",
-    "license": "BSD3",
+    "repository": "https://github.com/myrho/elm-statistics.git",
+    "license": "Apache License, Version 2.0",
     "source-directories": [
         "src"
     ],
-    "exposed-modules": [],
+    "exposed-modules": 
+      ["Statistics"],
     "dependencies": {
         "elm-lang/core": "5.0.0 <= v < 6.0.0"
     },
