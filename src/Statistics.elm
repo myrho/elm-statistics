@@ -1,7 +1,7 @@
 module Statistics exposing (divWithDefault, (/.), median, quantileR7)
 
 {-|
-A growing collection of functions useful for statistics.
+A growing collection of utility functions for statistics.
 -}
 
 import Array
