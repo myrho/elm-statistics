@@ -2,11 +2,23 @@ module Statistics exposing (divWithDefault, (/.), median, quantileR7)
 
 {-|
 A growing collection of utility functions for statistics.
+
+# Quantile
+@docs median, quantileR7
+
+# Division
+@docs divWithDefault, (/.)
 -}
 
 import Array
 
 
+{-|
+Division of numbers by 0 results in a given default.
+
+    divWithDefault 1 5 0 = 1
+    divWithDefault 1 5 2 = 2.5
+-}
 divWithDefault : Float -> Float -> Float -> Float
 divWithDefault default dividend divisor =
     if divisor == 0 then
@@ -15,6 +27,13 @@ divWithDefault default dividend divisor =
         dividend / divisor
 
 
+{-|
+Division of numbers by 0 results in 0.
+
+    5 /. 0 = 0
+    5 /. 2 = 2.5
+-}
+(/.) : Float -> Float -> Float
 (/.) =
     divWithDefault 0
 
